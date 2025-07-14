@@ -12,14 +12,11 @@ body {
   margin: auto;
 }
 
-h1,
-h2 {
+h1, h2 {
   color: #333;
 }
 
-input,
-select,
-button {
+input, select, button {
   margin: 5px 0;
   padding: 10px;
   font-size: 14px;
@@ -45,8 +42,7 @@ table {
   margin-top: 20px;
 }
 
-th,
-td {
+th, td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
