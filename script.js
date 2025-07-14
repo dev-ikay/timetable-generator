@@ -137,3 +137,13 @@ function displayTimetable(schedule) {
   html += `</table>`;
   document.getElementById("timetable").innerHTML = html;
 }
+
+function printTimetable() {
+  const printContents = document.getElementById('timetable').innerHTML;
+  const win = window.open('', '', 'width=800,height=600');
+  win.document.write(`<html><head><title>Print Timetable</title>`);
+  win.document.write(`<style>table{width:100%;border-collapse:collapse}th,td{border:1px solid #000;padding:8px;text-align:center}</style>`);
+  win.document.write(`</head><body>${printContents}</body></html>`);
+  win.document.close();
+  win.print();
+}
