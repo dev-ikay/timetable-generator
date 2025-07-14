@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timetable Generator (GA)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Timetable Generator (User Input)</h1>
+
+    <!-- Time Slots -->
+    <h2>1. Add Time Slots</h2>
+    <input type="text" id="timeslotInput" placeholder="e.g. Mon 8–10" />
+    <button onclick="addTimeslot()">Add Timeslot</button>
+    <ul id="timeslotList"></ul>
+
+    <!-- Lecturers -->
+    <h2>2. Add Lecturers</h2>
+    <input type="text" id="lecturerName" placeholder="Lecturer Name" />
+    <select id="lecturerSlots" multiple></select>
+    <button onclick="addLecturer()">Add Lecturer</button>
+    <ul id="lecturerList"></ul>
+
+    <!-- Courses -->
+    <h2>3. Add Courses</h2>
+    <input type="text" id="courseTitle" placeholder="Course Code" />
+    <input type="text" id="courseDept" placeholder="Department" />
+    <select id="courseLecturer"></select>
+    <button onclick="addCourse()">Add Course</button>
+    <ul id="courseList"></ul>
+
+    <hr>
+    <button onclick="generateTimetable()">Generate Timetable</button>
+    <div id="timetable"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
